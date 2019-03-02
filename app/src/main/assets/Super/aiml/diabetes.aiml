@@ -15,9 +15,36 @@
 <!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
-<category><pattern>SODA</pattern>
-<template>You should probably not have any soda as your sugar may shoot up.</template>
-</category>
+
+ <category>
+      <pattern>I am *</pattern>
+      <template>
+         Hello <set name = "username"> <star/>! </set>
+      </template>
+   </category>
+
+   <category>
+      <pattern>What's my name</pattern>
+      <template>
+         Hi <get name = "username"/> Thanks for the conversation!
+      </template>
+   </category>
+
+   <category>
+         <pattern>* name</pattern>
+         <template>
+            Your name is <get name = "username"/>
+         </template>
+      </category>
+      <category>
+            <pattern>name *</pattern>
+            <template>
+               Hi <get name = "username"/> Thanks for the conversation!
+            </template>
+         </category>
+
+
+
 <category><pattern>DIZZY</pattern>
 <template>Maybe you should take a small snack of eat some sugar candy.</template>
 </category>
@@ -29,5 +56,131 @@
 </category>
 <category><pattern>* DIZZY *</pattern>
 <template>Maybe you should take a small snack of eat some sugar candy.</template>
+</category>
+
+
+<category><pattern>I AM GOING TO EAT *</pattern>
+<template><think><set name="state"> <star/></set></think>
+         <condition name="state">
+                                  <!-- healthy foods -->
+          <li value="a banana">You should probably eat only one, because although it is high in fiber (good for you) it does contain carbs which will spike blood sugar.</li>
+                                  <!-- unhealthy foods -->
+          <li value="a soda">You should probably not have any soda as your sugar may shoot up.</li>
+          <li value="candy">You should probably not have any soda as your sugar may shoot up.</li>
+                    <li value="chocolate">You should probably not have any soda as your sugar may shoot up.</li>
+          <li value="cookies">You should probably not have any soda as your sugar may shoot up.</li>
+          <li value="chips">You should probably avoid that, it is high in carbs which will spike blood sugar.</li>
+          <li value="white bread">You should probably not eat this because white bread is high in carbs yet low in fiber. This combination can result in high blood sugar levels. Alternatively, choosing high-fiber, whole foods may help reduce blood sugar response</li>
+          <li value="pasta">You should probably not eat this because pasta is high in carbs yet low in fiber. This combination can result in high blood sugar levels. Alternatively, choosing high-fiber, whole foods may help reduce blood sugar response</li>
+          <li value="rice">You should probably not eat this because rice is high in carbs yet low in fiber. This combination can result in high blood sugar levels. Alternatively, choosing high-fiber, whole foods may help reduce blood sugar response</li>
+          <li value="flavoured coffee">You should probably avoid that, it is high in "liquid carbs" which will spike blood sugar.</li>
+          <li value="honey">You should probably not use honey, because although it is a good sugar subsitute, it does contain carbs which will spike blood sugar.</li>
+          <li value="agave nectar">You should probably not use agave nectar, because although it is a good sugar subsitute, it does contain carbs which will spike blood sugar.</li>
+          <li value="dried fruit">You should probably avoid these because dried fruits become more concentrated in sugar and may contain more than three times as many carbs as fresh fruits do. Avoid dried fruit and choose fruits low in sugar for optimal blood sugar control.</li>
+          <li value="pretzels">You should probably avoid these because packaged snacks are typically highly processed foods made from refined flour that can quickly raise your blood sugar levels.</li>
+          <li value="saltines">You should probably avoid these because packaged snacks are typically highly processed foods made from refined flour that can quickly raise your blood sugar levels.</li>
+          <li value="fruit yogurt">You probably should not have this because fruit-flavored yogurts are usually low in fat but high in sugar, which can lead to higher blood sugar and insulin levels. Plain, whole-milk yogurt is a better choice for diabetes control and overall health</li>
+          <li>I am not sure about <star/></li>
+         </condition></template>
+</category>
+
+<category><pattern>I AM EATING *</pattern>
+<template><think><set name="state"> <star/></set></think>
+         <condition name="state">
+                                  <!-- healthy foods -->
+          <li value="a banana">You should probably eat only one, because although it is high in fiber (good for you) it does contain carbs which will spike blood sugar.</li>
+                                  <!-- unhealthy foods -->
+          <li value="a soda">You should probably not have any soda as your sugar may shoot up.</li>
+          <li value="candy">You should probably not have any soda as your sugar may shoot up.</li>
+                    <li value="chocolate">You should probably not have any soda as your sugar may shoot up.</li>
+          <li value="cookies">You should probably not have any soda as your sugar may shoot up.</li>
+          <li value="chips">You should probably avoid that, it is high in carbs which will spike blood sugar.</li>
+          <li value="white bread">You should probably not eat this because white bread is high in carbs yet low in fiber. This combination can result in high blood sugar levels. Alternatively, choosing high-fiber, whole foods may help reduce blood sugar response</li>
+          <li value="pasta">You should probably not eat this because pasta is high in carbs yet low in fiber. This combination can result in high blood sugar levels. Alternatively, choosing high-fiber, whole foods may help reduce blood sugar response</li>
+          <li value="rice">You should probably not eat this because rice is high in carbs yet low in fiber. This combination can result in high blood sugar levels. Alternatively, choosing high-fiber, whole foods may help reduce blood sugar response</li>
+          <li value="flavoured coffee">You should probably avoid that, it is high in "liquid carbs" which will spike blood sugar.</li>
+          <li value="honey">You should probably not use honey, because although it is a good sugar subsitute, it does contain carbs which will spike blood sugar.</li>
+          <li value="agave nectar">You should probably not use agave nectar, because although it is a good sugar subsitute, it does contain carbs which will spike blood sugar.</li>
+          <li value="dried fruit">You should probably avoid these because dried fruits become more concentrated in sugar and may contain more than three times as many carbs as fresh fruits do. Avoid dried fruit and choose fruits low in sugar for optimal blood sugar control.</li>
+          <li value="pretzels">You should probably avoid these because packaged snacks are typically highly processed foods made from refined flour that can quickly raise your blood sugar levels.</li>
+          <li value="saltines">You should probably avoid these because packaged snacks are typically highly processed foods made from refined flour that can quickly raise your blood sugar levels.</li>
+          <li value="fruit yogurt">You probably should not have this because fruit-flavored yogurts are usually low in fat but high in sugar, which can lead to higher blood sugar and insulin levels. Plain, whole-milk yogurt is a better choice for diabetes control and overall health</li>
+          <li>I am not sure about <star/></li>
+         </condition></template>
+</category>
+
+<category><pattern>I WANT *</pattern>
+<template><think><set name="state"> <star/></set></think>
+         <condition name="state">
+                                  <!-- healthy foods -->
+          <li value="a banana">You should probably eat only one, because although it is high in fiber (good for you) it does contain carbs which will spike blood sugar.</li>
+                                  <!-- unhealthy foods -->
+          <li value="a soda">You should probably not have any soda as your sugar may shoot up.</li>
+          <li value="candy">You should probably not have any soda as your sugar may shoot up.</li>
+                    <li value="chocolate">You should probably not have any soda as your sugar may shoot up.</li>
+          <li value="cookies">You should probably not have any soda as your sugar may shoot up.</li>
+          <li value="chips">You should probably avoid that, it is high in carbs which will spike blood sugar.</li>
+          <li value="white bread">You should probably not eat this because white bread is high in carbs yet low in fiber. This combination can result in high blood sugar levels. Alternatively, choosing high-fiber, whole foods may help reduce blood sugar response</li>
+          <li value="pasta">You should probably not eat this because pasta is high in carbs yet low in fiber. This combination can result in high blood sugar levels. Alternatively, choosing high-fiber, whole foods may help reduce blood sugar response</li>
+          <li value="rice">You should probably not eat this because rice is high in carbs yet low in fiber. This combination can result in high blood sugar levels. Alternatively, choosing high-fiber, whole foods may help reduce blood sugar response</li>
+          <li value="flavoured coffee">You should probably avoid that, it is high in "liquid carbs" which will spike blood sugar.</li>
+          <li value="honey">You should probably not use honey, because although it is a good sugar subsitute, it does contain carbs which will spike blood sugar.</li>
+          <li value="agave nectar">You should probably not use agave nectar, because although it is a good sugar subsitute, it does contain carbs which will spike blood sugar.</li>
+          <li value="dried fruit">You should probably avoid these because dried fruits become more concentrated in sugar and may contain more than three times as many carbs as fresh fruits do. Avoid dried fruit and choose fruits low in sugar for optimal blood sugar control.</li>
+          <li value="pretzels">You should probably avoid these because packaged snacks are typically highly processed foods made from refined flour that can quickly raise your blood sugar levels.</li>
+          <li value="saltines">You should probably avoid these because packaged snacks are typically highly processed foods made from refined flour that can quickly raise your blood sugar levels.</li>
+          <li value="fruit yogurt">You probably should not have this because fruit-flavored yogurts are usually low in fat but high in sugar, which can lead to higher blood sugar and insulin levels. Plain, whole-milk yogurt is a better choice for diabetes control and overall health</li>
+          <li>I am not sure about <star/></li>
+         </condition></template>
+</category>
+
+<category><pattern>CAN I HAVE *</pattern>
+<template><think><set name="state"> <star/></set></think>
+         <condition name="state">
+                                  <!-- healthy foods -->
+          <li value="a banana">You should probably eat only one, because although it is high in fiber (good for you) it does contain carbs which will spike blood sugar.</li>
+                                  <!-- unhealthy foods -->
+          <li value="a soda">You should probably not have any soda as your sugar may shoot up.</li>
+          <li value="candy">You should probably not have any soda as your sugar may shoot up.</li>
+                    <li value="chocolate">You should probably not have any soda as your sugar may shoot up.</li>
+          <li value="cookies">You should probably not have any soda as your sugar may shoot up.</li>
+          <li value="chips">You should probably avoid that, it is high in carbs which will spike blood sugar.</li>
+          <li value="white bread">You should probably not eat this because white bread is high in carbs yet low in fiber. This combination can result in high blood sugar levels. Alternatively, choosing high-fiber, whole foods may help reduce blood sugar response</li>
+          <li value="pasta">You should probably not eat this because pasta is high in carbs yet low in fiber. This combination can result in high blood sugar levels. Alternatively, choosing high-fiber, whole foods may help reduce blood sugar response</li>
+          <li value="rice">You should probably not eat this because rice is high in carbs yet low in fiber. This combination can result in high blood sugar levels. Alternatively, choosing high-fiber, whole foods may help reduce blood sugar response</li>
+          <li value="flavoured coffee">You should probably avoid that, it is high in "liquid carbs" which will spike blood sugar.</li>
+          <li value="honey">You should probably not use honey, because although it is a good sugar subsitute, it does contain carbs which will spike blood sugar.</li>
+          <li value="agave nectar">You should probably not use agave nectar, because although it is a good sugar subsitute, it does contain carbs which will spike blood sugar.</li>
+          <li value="dried fruit">You should probably avoid these because dried fruits become more concentrated in sugar and may contain more than three times as many carbs as fresh fruits do. Avoid dried fruit and choose fruits low in sugar for optimal blood sugar control.</li>
+          <li value="pretzels">You should probably avoid these because packaged snacks are typically highly processed foods made from refined flour that can quickly raise your blood sugar levels.</li>
+          <li value="saltines">You should probably avoid these because packaged snacks are typically highly processed foods made from refined flour that can quickly raise your blood sugar levels.</li>
+          <li value="fruit yogurt">You probably should not have this because fruit-flavored yogurts are usually low in fat but high in sugar, which can lead to higher blood sugar and insulin levels. Plain, whole-milk yogurt is a better choice for diabetes control and overall health</li>
+          <li>I am not sure about <star/></li>
+         </condition></template>
+</category>
+
+<category><pattern>CAN I EAT *</pattern>
+<template><think><set name="state"> <star/></set></think>
+         <condition name="state">
+                                  <!-- healthy foods -->
+          <li value="a banana">You should probably eat only one, because although it is high in fiber (good for you) it does contain carbs which will spike blood sugar.</li>
+                                  <!-- unhealthy foods -->
+          <li value="a soda">You should probably not have any soda as your sugar may shoot up.</li>
+          <li value="candy">You should probably not have any soda as your sugar may shoot up.</li>
+          <li value="chocolate">You should probably not have any soda as your sugar may shoot up.</li>
+          <li value="cookies">You should probably not have any soda as your sugar may shoot up.</li>
+          <li value="chips">You should probably avoid that, it is high in carbs which will spike blood sugar.</li>
+          <li value="white bread">You should probably not eat this because white bread is high in carbs yet low in fiber. This combination can result in high blood sugar levels. Alternatively, choosing high-fiber, whole foods may help reduce blood sugar response</li>
+          <li value="pasta">You should probably not eat this because pasta is high in carbs yet low in fiber. This combination can result in high blood sugar levels. Alternatively, choosing high-fiber, whole foods may help reduce blood sugar response</li>
+          <li value="rice">You should probably not eat this because rice is high in carbs yet low in fiber. This combination can result in high blood sugar levels. Alternatively, choosing high-fiber, whole foods may help reduce blood sugar response</li>
+          <li value="flavoured coffee">You should probably avoid that, it is high in "liquid carbs" which will spike blood sugar.</li>
+          <li value="honey">You should probably not use honey, because although it is a good sugar subsitute, it does contain carbs which will spike blood sugar.</li>
+          <li value="agave nectar">You should probably not use agave nectar, because although it is a good sugar subsitute, it does contain carbs which will spike blood sugar.</li>
+          <li value="dried fruit">You should probably avoid these because dried fruits become more concentrated in sugar and may contain more than three times as many carbs as fresh fruits do. Avoid dried fruit and choose fruits low in sugar for optimal blood sugar control.</li>
+          <li value="pretzels">You should probably avoid these because packaged snacks are typically highly processed foods made from refined flour that can quickly raise your blood sugar levels.</li>
+          <li value="saltines">You should probably avoid these because packaged snacks are typically highly processed foods made from refined flour that can quickly raise your blood sugar levels.</li>
+          <li value="fruit yogurt">You probably should not have this because fruit-flavored yogurts are usually low in fat but high in sugar, which can lead to higher blood sugar and insulin levels. Plain, whole-milk yogurt is a better choice for diabetes control and overall health</li>
+          <li>I am not sure about <star/></li>
+         </condition></template>
 </category>
 </aiml>
