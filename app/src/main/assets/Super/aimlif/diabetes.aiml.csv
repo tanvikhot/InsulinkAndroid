@@ -1,0 +1,5 @@
+0,SODA,*,*,You should probably not have any soda as your sugar may shoot up. Thank you,diabetes.aiml
+0,DIZZY,*,*,Maybe you should take a small snack of eat some sugar candy.,diabetes.aiml
+0,DIZZY *,*,*,Maybe you should take a small snack of eat some sugar candy.,diabetes.aiml
+0,* DIZZY,*,*,Maybe you should take a small snack of eat some sugar candy.,diabetes.aiml
+0,* DIZZY *,*,*,Maybe you should take a small snack of eat some sugar candy.,diabetes.aiml
