@@ -27,18 +27,7 @@
 <category><pattern>NAME *</pattern>
 <template>Hi <get name="username"/> Thanks for the conversation!</template>
 </category>
-<category><pattern>DIZZY</pattern>
-<template>Maybe you should take a small snack of eat some sugar candy.</template>
-</category>
-<category><pattern>DIZZY *</pattern>
-<template>Maybe you should take a small snack of eat some sugar candy.</template>
-</category>
-<category><pattern>* DIZZY</pattern>
-<template>Maybe you should take a small snack of eat some sugar candy.</template>
-</category>
-<category><pattern>* DIZZY *</pattern>
-<template>Maybe you should take a small snack of eat some sugar candy.</template>
-</category>
+
 <category><pattern>I AM GOING TO EAT *</pattern>
 <template><think><set name="state"> <star/></set></think>
          <condition name="state">
@@ -63,8 +52,8 @@
                                   <!-- unhealthy foods -->
           <li value="a soda">You should probably not have any soda as your sugar may shoot up.</li>
           <li value="candy">You should probably not have any candy as your sugar may shoot up.</li>
-                    <li value="chocolate">You should probably not have any soda as your sugar may shoot up.</li>
-          <li value="cookies">You should probably not have any soda as your sugar may shoot up.</li>
+                    <li value="chocolate">You should probably not have any chocolate as your sugar may shoot up.</li>
+          <li value="cookies">You should probably not have any cookies as your sugar may shoot up.</li>
           <li value="chips">You should probably avoid that, it is high in carbs which will spike blood sugar.</li>
           <li value="white bread">You should probably not eat this because white bread is high in carbs yet low in fiber. This combination can result in high blood sugar levels. Alternatively, choosing high-fiber, whole foods may help reduce blood sugar response</li>
           <li value="pasta">You should probably not eat this because pasta is high in carbs yet low in fiber. This combination can result in high blood sugar levels. Alternatively, choosing high-fiber, whole foods may help reduce blood sugar response</li>
@@ -91,4 +80,6 @@
 <category><pattern>CAN I EAT *</pattern>
 <template><srai>I AM GOING TO EAT <star/></srai></template>
 </category>
+
+
 </aiml>

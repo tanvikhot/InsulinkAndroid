@@ -1,0 +1,7 @@
+0,I AM FEELING *,*,*,<think>#Newline     <set name="state"><star/></set>#Newline   </think>#Newline   <condition name="state">#Newline     <li value="sick">What medicine do you take#Newline     </li>#Newline     <li value="dizzy">What medicine do you take#Newline     </li>#Newline     <li value="bad">What medicine do you take#Newline          </li>#Newline     <li value="horrible">What medicine do you take#Newline               </li>#Newline     <li>#Newline       I am not sure how I can help you with this feeling of <star/>. Please call emergency services immediately.#Newline     </li>#Newline   </condition>,symptoms.aiml
+0,METFORMIN,WHAT MEDICINE DO YOU TAKE,*,Have you taken the medicine in the last 4 hours?,symptoms.aiml
+0,YES,HAVE YOU TAKEN THE MEDICINE IN THE LAST 4 HOURS,*,You should call emergency right away.,symptoms.aiml
+0,NO,HAVE YOU TAKEN THE MEDICINE IN THE LAST 4 HOURS,*,Please take the prescribed medication right way,symptoms.aiml
+0,INSULIN,WHAT MEDICINE DO YOU TAKE,*,Have you taken the medicine in the last 8 hours?,symptoms.aiml
+0,YES,HAVE YOU TAKEN THE MEDICINE IN THE LAST 8 HOURS,*,You should call emergency right away.,symptoms.aiml
+0,NO,HAVE YOU TAKEN THE MEDICINE IN THE LAST 8 HOURS,*,Please take the prescribed medication right way,symptoms.aiml

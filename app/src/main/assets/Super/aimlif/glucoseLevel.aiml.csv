@@ -1,0 +1,20 @@
+0,CHECK MY GLUCOSE LEVEL,*,*,What is your glucose level (random blood sugar test)?&gt,glucoseLevel.aiml
+0,5.6,WHAT IS YOUR GLUCOSE LEVEL (FASTING BLOOD SUGAR TEST)?,*,You have normal glucose levels.,glucoseLevel.aiml
+0,5.7,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have prediabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml
+0,5.8,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have prediabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml
+0,5.9,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have prediabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml
+0,6.0,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have prediabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml
+0,6.1,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have prediabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml
+0,6.2,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have prediabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml
+0,6.3,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have prediabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml
+0,6.4,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have prediabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml
+0,6.5,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have prediabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml
+0,6.6,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have prediabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml
+0,6.7,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have prediabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml
+0,6.8,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have prediabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml
+0,6.9,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have prediabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml
+0,7,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have diabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml
+0,7.1,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have diabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml
+0,7.2,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have diabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml
+0,7.3,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have diabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml
+0,7.4,WHAT IS YOUR GLUCOSE LEVEL (RANDOM BLOOD SUGAR TEST)?,*,You have diabetes. Ask me some more questions on what you can and cannot eat.,glucoseLevel.aiml

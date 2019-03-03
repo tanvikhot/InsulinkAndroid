@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: diabetes.aiml -->
+<!-- Author: Dr. Richard S. Wallace -->
+<!-- Last modified: March 02, 2019 -->
+<!--  -->
+<!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
+<!--  -->
+<!-- The SUPER brain is Copyright &copy; 2019 by ALICE AI Foundation. -->
+<!--  -->
+<!-- The SUPER brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information see http://www.alicebot.org -->
+<category>
+      <pattern>Check my glucose level</pattern>
+      <template>What is your glucose level (random blood sugar test)?></template>
+   </category>
+
+   <category>
+      <pattern>5.6</pattern>
+      <that>What is your glucose level (fasting blood sugar test)?</that>
+      <template>You have normal glucose levels.</template>
+   </category>
+
+   <category>
+      <pattern>5.7</pattern>
+      <that>What is your glucose level (random blood sugar test)?</that>
+      <template>You have prediabetes. Ask me some more questions on what you can and cannot eat.</template>
+   </category>
+   <category>
+         <pattern>5.8</pattern>
+         <that>What is your glucose level (random blood sugar test)?</that>
+         <template>You have prediabetes. Ask me some more questions on what you can and cannot eat.</template>
+      </category>
+      <category>
+            <pattern>5.9</pattern>
+            <that>What is your glucose level (random blood sugar test)?</that>
+            <template>You have prediabetes. Ask me some more questions on what you can and cannot eat.</template>
+         </category>
+         <category>
+               <pattern>6.0</pattern>
+               <that>What is your glucose level (random blood sugar test)?</that>
+               <template>You have prediabetes. Ask me some more questions on what you can and cannot eat.</template>
+            </category>
+            <category>
+                  <pattern>6.1</pattern>
+                  <that>What is your glucose level (random blood sugar test)?</that>
+                  <template>You have prediabetes. Ask me some more questions on what you can and cannot eat.</template>
+               </category>
+           <category>
+                 <pattern>6.2</pattern>
+                 <that>What is your glucose level (random blood sugar test)?</that>
+                 <template>You have prediabetes. Ask me some more questions on what you can and cannot eat.</template>
+              </category>
+            <category>
+                  <pattern>6.3</pattern>
+                  <that>What is your glucose level (random blood sugar test)?</that>
+                  <template>You have prediabetes. Ask me some more questions on what you can and cannot eat.</template>
+               </category>
+             <category>
+                   <pattern>6.4</pattern>
+                   <that>What is your glucose level (random blood sugar test)?</that>
+                   <template>You have prediabetes. Ask me some more questions on what you can and cannot eat.</template>
+            </category>
+            <category>
+                <pattern>6.5</pattern>
+                <that>What is your glucose level (random blood sugar test)?</that>
+                <template>You have prediabetes. Ask me some more questions on what you can and cannot eat.</template>
+             </category>
+             <category>
+                   <pattern>6.6</pattern>
+                   <that>What is your glucose level (random blood sugar test)?</that>
+                   <template>You have prediabetes. Ask me some more questions on what you can and cannot eat.</template>
+                </category>
+            <category>
+                  <pattern>6.7</pattern>
+                  <that>What is your glucose level (random blood sugar test)?</that>
+                  <template>You have prediabetes. Ask me some more questions on what you can and cannot eat.</template>
+               </category>
+             <category>
+                   <pattern>6.8</pattern>
+                   <that>What is your glucose level (random blood sugar test)?</that>
+                   <template>You have prediabetes. Ask me some more questions on what you can and cannot eat.</template>
+                </category>
+             <category>
+                <pattern>6.9</pattern>
+                <that>What is your glucose level (random blood sugar test)?</that>
+                <template>You have prediabetes. Ask me some more questions on what you can and cannot eat.</template>
+             </category>
+
+   <category>
+         <pattern>7</pattern>
+         <that>What is your glucose level (random blood sugar test)?</that>
+         <template>You have diabetes. Ask me some more questions on what you can and cannot eat.</template>
+      </category>
+ <category>
+         <pattern>7.1</pattern>
+         <that>What is your glucose level (random blood sugar test)?</that>
+         <template>You have diabetes. Ask me some more questions on what you can and cannot eat.</template>
+      </category>
+       <category>
+               <pattern>7.2</pattern>
+               <that>What is your glucose level (random blood sugar test)?</that>
+               <template>You have diabetes. Ask me some more questions on what you can and cannot eat.</template>
+            </category>
+             <category>
+                     <pattern>7.3</pattern>
+                     <that>What is your glucose level (random blood sugar test)?</that>
+                     <template>You have diabetes. Ask me some more questions on what you can and cannot eat.</template>
+                  </category>
+                   <category>
+                           <pattern>7.4</pattern>
+                           <that>What is your glucose level (random blood sugar test)?</that>
+                           <template>You have diabetes. Ask me some more questions on what you can and cannot eat.</template>
+                        </category>
+</aiml>

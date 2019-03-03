@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: diabetes.aiml -->
+<!-- Author: Dr. Richard S. Wallace -->
+<!-- Last modified: March 02, 2019 -->
+<!--  -->
+<!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
+<!--  -->
+<!-- The SUPER brain is Copyright &copy; 2019 by ALICE AI Foundation. -->
+<!--  -->
+<!-- The SUPER brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information see http://www.alicebot.org -->
+<category><pattern>I AM FEELING *</pattern>
+ <template><think>
+     <set name="state"><star/></set>
+   </think>
+   <condition name="state">
+     <li value="sick">What medicine do you take
+     </li>
+     <li value="dizzy">What medicine do you take
+     </li>
+     <li value="bad">What medicine do you take
+          </li>
+     <li value="horrible">What medicine do you take
+               </li>
+     <li>
+       I am not sure how I can help you with this feeling of <star/>. Please call emergency services immediately.
+     </li>
+   </condition></template>
+ </category>
+ <category><pattern>METFORMIN</pattern><that>WHAT MEDICINE DO YOU TAKE</that>
+ <template>Have you taken the medicine in the last 4 hours?</template>
+ </category>
+ <category><pattern>YES</pattern><that>HAVE YOU TAKEN THE MEDICINE IN THE LAST 4 HOURS</that>
+ <template>You should call emergency right away.</template>
+ </category>
+ <category><pattern>NO</pattern><that>HAVE YOU TAKEN THE MEDICINE IN THE LAST 4 HOURS</that>
+ <template>Please take the prescribed medication right way</template>
+ </category>
+ <category><pattern>INSULIN</pattern><that>WHAT MEDICINE DO YOU TAKE</that>
+ <template>Have you taken the medicine in the last 8 hours?</template>
+ </category>
+ <category><pattern>YES</pattern><that>HAVE YOU TAKEN THE MEDICINE IN THE LAST 8 HOURS</that>
+ <template>You should call emergency right away.</template>
+ </category>
+ <category><pattern>NO</pattern><that>HAVE YOU TAKEN THE MEDICINE IN THE LAST 8 HOURS</that>
+ <template>Please take the prescribed medication right way</template>
+ </category>
+
+
+</aiml>
