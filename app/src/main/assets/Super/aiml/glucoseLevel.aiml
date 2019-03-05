@@ -15,6 +15,7 @@
 <!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
+<!--
 <category>
       <pattern>Check my glucose level</pattern>
       <template>What is your glucose level (random blood sugar test)?></template>
@@ -117,4 +118,6 @@
                            <that>What is your glucose level (random blood sugar test)?</that>
                            <template>You have diabetes. Ask me some more questions on what you can and cannot eat.</template>
                         </category>
+                        -->
+
 </aiml>

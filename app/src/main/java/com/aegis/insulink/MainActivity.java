@@ -34,13 +34,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onSend(View view) {
+        System.out.println("Hi! I'm Bea, your diabetes personal chatbot. Feel free to ask me questions about your diet, symptoms, and glucose levels.");
         EditText queryText = (EditText) findViewById(R.id.queryText);
         String chatResponse = chatBot.chat(queryText.getText().toString());
         TextView textView = (TextView) findViewById(R.id.chatText);
         textView.append("\n");
         textView.append("You said: " + queryText.getText().toString());
         textView.append("\n");
-        textView.append("Chatbot: " + chatResponse);
+        textView.append("Bea: " + chatResponse);
         System.out.println(chatResponse);
         queryText.getText().clear();
     }
